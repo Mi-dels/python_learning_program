@@ -1,0 +1,59 @@
+Task = []
+
+def create_task():
+    try:
+        task = str(input("Write the task to be done:"))
+        Task.append({"Tasks": task})
+        print(f"Task {task} has been added.")
+    except:
+        ValueError("Invalid syntax. check the task")
+
+def view_task():
+    if not Task:
+        print("No task available.")
+    else:
+        pass
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == "__main__":
+    while(True):
+
+        print("Welcome User")
+        print("which action would you ike to perform.")
+        print("1.) Create task")
+        print("2.) View Task")
+        print("3.) Update Created Task")
+        print("4.) Delete Task")
+        choice = input("input what action you would like to perform: ")
+
+        if (choice == "1"):
+            create_task()
+        
+        elif (choice == "2"):
+            view_task()
+        
+        elif (choice == "3"):
+            update_task()
+        
+        elif (choice == "4"):
+            delete_task()
+        
+        elif (choice == "5"):
+            task_status()
+        
+        else:
+            ValueError("Invalid syntax. ")             
+
+
