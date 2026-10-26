@@ -70,7 +70,7 @@ print(mini)
 
 
 # to also get more functions, you need to import math like this
-
+import math
 #then if you need something. for example pi.you just do this
 print(math.pi)
 #you can also do math.e , if you ever work with physics
